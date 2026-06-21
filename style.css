@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f6f6fb;
+}
+
+.container {
+  width: 380px;
+  max-width: 90%;
+
+  padding: 40px 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1d1d2c;
+
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b6b7d;
+  font-size: 18px;
+
+  margin-bottom: 40px;
+}
+
+.input-box {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.05);
+
+  margin-bottom: 30px;
+}
+
+.input-box i {
+  color: #8e5cff;
+  font-size: 20px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 18px;
+}
+
+#guessBtn {
+  width: 100%;
+  padding: 20px;
+
+  border: none;
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8e5cff,
+      #6a3df0
+    );
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 35px;
+}
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.05);
+}
+
+.card div {
+  font-weight: 600;
+  color: #222;
+}
+
+.card i {
+  margin-right: 8px;
+}
+
+.restart {
+  width: 100%;
+  padding: 20px;
+
+  border: 2px solid #d8c9ff;
+  border-radius: 20px;
+
+  background: transparent;
+  color: #7b49ff;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+#message {
+  text-align: center;
+  margin-top: 25px;
+  color: #6a3df0;
+  font-weight: 600;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  animation: pop 0.3s ease;
+}
+
+.trophy {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+@keyframes pop {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

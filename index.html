@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Number<br>Guessing Game</h1>
+
+    <p class="subtitle">Guess a number between 1 and 100</p>
+
+    <div class="input-box">
+      <i class="fa-solid fa-hashtag"></i>
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+    </div>
+
+    <button id="guessBtn">
+      Guess
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <div class="card">
+      <div>
+        <i class="fa-regular fa-clock"></i>
+        Attempts
+      </div>
+      <span id="attempts">0</span>
+    </div>
+
+    <div class="card">
+      <div>
+        <i class="fa-regular fa-clock"></i>
+        Previous Guesses
+      </div>
+      <span id="history">None</span>
+    </div>
+
+    <button id="restartBtn" class="restart">
+      <i class="fa-solid fa-rotate-right"></i>
+      Restart Game
+    </button>
+
+    <p id="message">Start Guessing...</p>
+
+  </div>
+
+  <!-- WIN POPUP -->
+  <div id="winPopup" class="popup hidden">
+    <div class="popup-box">
+      <div class="trophy">🏆</div>
+      <h2>Congratulations!</h2>
+      <p id="winText"></p>
+
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
